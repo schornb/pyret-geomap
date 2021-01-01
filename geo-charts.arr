@@ -265,7 +265,7 @@ fun geo-map(tab :: Table, options-generator :: WrappedGeoChartWindowOptions) -> 
   end
   options = options-generator(geo-chart-window-option)
   _ = check-base-window-options(options)
-  P.geo-map(options, tab._rows-raw-array)
+  geo-map(options, tab._rows-raw-array)
 end
 
 #charts: 
@@ -399,4 +399,3 @@ fun geochart-from-list(
     tab: to-table2(region-labels, values)
   } ^ geochart-series
 end
-
