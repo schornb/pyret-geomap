@@ -263,7 +263,9 @@ fun geo-map(tab :: Table, options-generator :: WrappedGeoChartWindowOptions) -> 
   when raw-array-length(tab._rows-raw-array) == 0:
     raise('geo-map: expect the table to have at least one row')
   end
-  #return rendered map
+  options = options-generator(geo-chart-window-option)
+  _ = check-base-window-options(options)
+  P.geo-map(options, tab._rows-raw-array)
 end
 
 #charts: 
