@@ -23,6 +23,7 @@ provide  {
   histogram: histogram,
   pie-chart: pie-chart,
   bar-chart: bar-chart,
+  geo-map: geo-map,
   grouped-bar-chart: grouped-bar-chart,
   #dot-chart: dot-chart,
   #box-chart: box-chart,
