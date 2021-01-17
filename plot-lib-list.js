@@ -1321,7 +1321,7 @@
         detached = createDiv(),
         canvas = createCanvas(detached, dimension);
 
-    d3.json("world.geojson", createMap)
+    //d3.json("world.geojson", createMap)
     var proj = d3.geoMercator()
         .scale(100)
         .translate([250, 250])
